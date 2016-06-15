@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="4dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    tools:context="in.codekamp.codekampconnect.SaveContact">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:id="@+id/Save_firstname"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="last Name"
+            android:id="@+id/last_name"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/email_ip"
+        android:layout_marginTop="20dp"
+        android:layout_weight="5"
+        />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addbtn"
+                android:layout_weight="1"
+                android:onClick="addmore"
+                />
+        </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:visibility="gone"
+       android:id="@+id/container1">
+       <EditText
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:hint="Email"
+           android:id="@+id/email_ip0"
+           android:layout_marginTop="20dp"
+           android:layout_weight="5"
+           />
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:background="@drawable/removemore"
+           android:layout_weight="1"
+           android:id="@+id/remove_1"
+           android:onClick="removemore"
+           />
+
+   </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/container2">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/email_ip1"
+                android:layout_marginTop="20dp"
+                android:layout_weight="5"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/removemore"
+                android:layout_weight="1"
+                android:onClick="removemore"
+                />
+
+        </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birthday yyyy-mm-dd"
+        android:id="@+id/bday_ip"
+        android:layout_marginTop="20dp"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phone"
+            android:id="@+id/phone_no"
+            android:layout_marginTop="20dp"
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="facebook id"
+        android:id="@+id/facebook_ip"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="linkedin id"
+        android:id="@+id/linkedin_ip"
+        android:layout_marginTop="20dp"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:id="@+id/save_button"
+        android:onClick="updatecontact"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT!"
+        android:id="@+id/logoutbtn"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="bhaagja"/>
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
